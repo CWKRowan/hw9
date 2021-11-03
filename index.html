@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Setlist</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script language="javascript">
+        
+        $.get( "https://cwkrowan.github.io/hw9/setlist.json",
+            function( data ) {
+                str = JSON.stringify(data);
+                document.write(str + "<br/>");
+                strHTML = "<p id = 'songs'>";
+                    i = 0;
+                    data.forEach(function(song) {
+                        str = song.title;
+                        strHTML += "<p id = \"" + i + "\"><br/>"
+                            + str + "<br/>" 
+                            + "Artist: " + song.artist + "<br/>"
+                            + "Genre: " + song.genres + "<br/>"
+                            + "Released " + song.year + "<br/></p>";
+                            i++;
+                    })
+                strHTML += "</p>";
+                strForm = "<br/>Choose a Genre: <br/><form name = 'form'>"
+                        + "<select id = 'select'>"
+                        + "<option value = 'pop'>Pop</option>"
+                        + "<option value = 'folk'>Folk</option>"
+                        + "<option value = 'rap'>Rap</option>"
+                        + "</select>"
+                        + "</form><button value = 'Filter' onclick= 'return filter()'>Filter</button>";
+                 document.write(strForm);
+                document.write(strHTML);
+            })
+            function filter(){
+                for (i = 0; i < 10; i++){
+                    document.getElementById(i).style.display = "none";
+                }
+                document.getElementById('songs').style.display = "none";
+                if (document.getElementById('select').value == "pop"){
+                    document.getElementById(0).style.display = "block";
+                    document.getElementById(1).style.display = "block";
+                    document.getElementById(7).style.display = "block";
+                    document.getElementById(8).style.display = "block";
+                }
+                if (document.getElementById('select').value == "folk"){
+                    document.getElementById(2).style.display = "block";
+                    document.getElementById(3).style.display = "block";
+                    document.getElementById(4).style.display = "block";
+                    document.getElementById(5).style.display = "block";
+                    document.getElementById(6).style.display = "block";
+                }
+                if (document.getElementById('select').value == "rap"){
+                    document.getElementById(7).style.display = "block";
+                    document.getElementById(9).style.display = "block";
+                }
+            }
+    </script>
+    
+</body>
+</html>
