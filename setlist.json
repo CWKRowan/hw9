@@ -1,0 +1,63 @@
+[
+    {
+        "title": "Anna Sun",
+        "artist": "Walk The Moon",
+        "genres": ["Dance","Pop"],
+        "year": "2012"
+    },
+    {
+        "title": "Shut Up and Dance",
+        "artist": "Walk The Moon",
+        "genres": ["Pop","Rock"],
+        "year": "2014"
+    },
+    {
+        "title": "The Gardener",
+        "artist": "The Tallest Man on Earth",
+        "genres": ["Folk"],
+        "year": "2008"
+    },
+    {
+        "title": "Love is All",
+        "artist": "The Tallest Man on Earth",
+        "genres": ["Folk"],
+        "year": "2017"
+    },
+    {
+        "title": "The Dreamer",
+        "artist": "The Tallest Man on Earth",
+        "genres": ["Folk"],
+        "year": "2010"
+    },
+    {
+        "title": "Where Do My Bluebird Fly",
+        "artist": "The Tallest Man on Earth",
+        "genres": ["Folk"],
+        "year": "2008"
+    },
+    {
+        "title": "I Won't Be Found",
+        "artist": "The Tallest Man on Earth",
+        "genres": ["Folk"],
+        "year": "2008"
+    },
+    {
+        "title": "Super Bass",
+        "artist": "Nicki Minaj",
+        "genres": ["Pop","Rap"],
+        "year": "2011"
+    },
+    {
+        "title": "Bang Bang",
+        "artist": "Nicki Minaj, Ariana Grandé, Jessie J",
+        "genres": ["Pop"],
+        "year": "2014"
+    },
+    {
+        "title": "Flashing Lights",
+        "artist": "Kanye West",
+        "genres": ["Rap"],
+        "year": "2007"
+    }
+]
+
