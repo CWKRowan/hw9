@@ -2,13 +2,13 @@
     {
         "title": "Anna Sun",
         "artist": "Walk The Moon",
-        "genres": ["Dance","Pop"],
+        "genres": ["Pop"],
         "year": "2012"
     },
     {
         "title": "Shut Up and Dance",
         "artist": "Walk The Moon",
-        "genres": ["Pop","Rock"],
+        "genres": ["Pop"],
         "year": "2014"
     },
     {
